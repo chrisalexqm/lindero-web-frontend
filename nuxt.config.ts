@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       BACKOFFICE_URL:
-        process.env.NODE_ENV != 'development'
+        process.env.NODE_ENV == 'development'
           ? 'http://0.0.0.0:8055'
           : 'https://backoffice.lindero.pe',
       DOMAIN_URL:
