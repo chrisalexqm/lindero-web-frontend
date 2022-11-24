@@ -1,0 +1,193 @@
+@import 'fonts';
+@import 'header';
+
+:root {
+  /* PRIMARY */
+  --maz-color-primary-50: #fef0e0;
+  --maz-color-primary-100: #fcdbb6;
+  --maz-color-primary-200: #fac68b;
+  --maz-color-primary-300: #f9b160;
+  --maz-color-primary-400: #f79c35;
+  --maz-color-primary: #f5870a;
+  --maz-color-primary-600: #ca6f08;
+  --maz-color-primary-700: #9f5807;
+  --maz-color-primary-800: #744005;
+  --maz-color-primary-900: #4a2903;
+  --maz-color-primary-contrast: white;
+  --maz-color-primary-alpha: rgb(245 135 10 / 60%);
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-lindero-body-1 selection:bg-lindero-blue-light selection:text-lindero-white text-lindero-gray font-poppins text-base antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-lindero-gray m-0;
+}
+
+.btn-group > .btn-active,
+.btn-group > input[type='radio']:checked.btn,
+.btn-group > .btn-primary:hover,
+.btn-primary {
+  @apply text-lindero-white;
+}
+
+.gm-style .gm-style-iw-c {
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 4%);
+}
+
+.gm-style .gm-style-iw-t::after {
+  box-shadow: -1px 1px 0 1px rgb(0 0 0 / 4%);
+}
+
+.gm-ui-hover-effect {
+  display: none;
+}
+
+.checkbox:checked,
+.checkbox[checked='true'] {
+  background-image: linear-gradient(
+      -45deg,
+      transparent 65%,
+      hsl(var(--chkbg)) 65.99%
+    ),
+    linear-gradient(45deg, transparent 75%, hsl(var(--chkbg)) 75.99%),
+    linear-gradient(-45deg, hsl(var(--chkbg)) 40%, transparent 40.99%),
+    linear-gradient(
+      45deg,
+      hsl(var(--chkbg)) 30%,
+      white 30.99%,
+      white 40%,
+      transparent 40.99%
+    ),
+    linear-gradient(-45deg, white 50%, hsl(var(--chkbg)) 50.99%);
+}
+
+.collapse-title,
+.collapse > input[type='checkbox'] {
+  min-height: auto;
+}
+
+.collapse-open :where(.collapse-content),
+.collapse:focus:not(.collapse-close) :where(.collapse-content),
+.collapse:not(.collapse-close)
+  :where(input[type='checkbox']:checked ~ .collapse-content) {
+  padding-bottom: 0rem;
+}
+
+.tab {
+  @apply text-lindero-gray;
+}
+
+.tab.tab-active {
+  @apply text-lindero-orange border-lindero-orange;
+}
+
+table,
+th,
+td {
+  @apply bg-lindero-white rounded border-lindero-gray-4 border;
+}
+
+.mrk-parsed {
+  span {
+    @apply font-poppins text-base text-lindero-gray;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold mt-4;
+  }
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-base;
+  }
+  h5 {
+    @apply text-sm;
+  }
+  h6 {
+    @apply text-xs;
+  }
+  p {
+    @apply my-6;
+  }
+
+  ul,
+  ol {
+    // padding-inline-start: 20px;
+    // @apply my-6;
+  }
+  ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  ol {
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  a {
+    @apply text-lindero-blue-light hover:underline;
+  }
+  code {
+    padding: 2px 4px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    background-color: rgb(240, 244, 249);
+    border-radius: 6px;
+  }
+  blockquote {
+    margin-left: 0;
+    padding-left: 1em;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    border-left: 2px solid rgb(211, 218, 228);
+  }
+  table {
+    @apply table-auto rounded;
+    th,
+    td {
+      @apply font-medium p-2;
+    }
+  }
+  img {
+    @apply mx-auto rounded;
+  }
+  hr {
+    background-color: #d3dae4;
+    height: 1px;
+    border: none;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}

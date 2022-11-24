@@ -1,0 +1,9 @@
+.menu__item {
+  @apply text-lindero-white font-semibold hover:text-lindero-white hover:underline hover:decoration-lindero-blue-light hover:decoration-2 hover:underline-offset-4;
+  &--dark {
+    @apply text-lindero-gray-darken hover:text-lindero-gray-darken;
+  }
+  &.router-link-active {
+    @apply underline decoration-lindero-blue-light decoration-2 underline-offset-4;
+  }
+}
