@@ -2,14 +2,14 @@
 export default defineNuxtConfig({
   modules: ['nuxt-directus', '@nuxtjs/tailwindcss'],
   directus: {
-    url: 'https://backoffice.lindero.pe/'
+    url: 'https://directus-production-257f.up.railway.app/'
   },
   runtimeConfig: {
     public: {
       BACKOFFICE_URL:
         process.env.NODE_ENV == 'development'
           ? 'http://0.0.0.0:8055'
-          : 'https://backoffice.lindero.pe',
+          : 'https://directus-production-257f.up.railway.app',
       DOMAIN_URL:
         process.env.NODE_ENV == 'development'
           ? 'http://0.0.0.0:3000'

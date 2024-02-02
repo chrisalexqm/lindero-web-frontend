@@ -94,7 +94,7 @@ useHead({
 
 onMounted(() => {
   fetchProjectVariables()
-  fetchArticles()
+  // fetchArticles()
   let isMobile = false
 
   if (process.client) {
@@ -350,7 +350,7 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="flex flex-col items-center">
+    <!-- <div class="flex flex-col items-center">
       <div class="z-30 flex flex-col items-center max-w-[1200px] px-5 py-12">
         <h2
           class="text-lindero-orange text-base uppercase font-bold font-teko underline decoration-lindero-orange decoration-2 underline-offset-8 mb-5"
@@ -408,7 +408,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <LFooter></LFooter>
   </div>
