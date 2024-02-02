@@ -22,10 +22,10 @@ const menu = [
     name: 'Productos',
     route: '/productos',
   },
-  {
-    name: 'Blog',
-    route: '/blog',
-  },
+  // {
+  //   name: 'Blog',
+  //   route: '/blog',
+  // },
   {
     name: 'Contáctanos',
     route: '/contactanos',
